@@ -4,6 +4,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 dotenv.config();
+const path = require('path');
 
 const mongoose = require("mongoose");
 // const router = require("./routes/router");
@@ -14,6 +15,9 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
+
+// Serve uploaded files statically
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
     
 // const uri = 'mongodb+srv://lakshanhim:lakshanhim@cluster0.wry3cix.mongodb.net/?appName=Cluster0'
 
