@@ -18,7 +18,7 @@ CORS – For enabling cross-origin requests
 
 Setup Instructions
 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/travel-experience-platform.git
+git clone https:https://github.com/LakshanHim/travel-experience-listing/tree/main
 
 2. Install dependencies
 npm install
